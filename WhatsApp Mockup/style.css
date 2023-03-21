@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*
+Colors
+WhatsApp Darkest Green - #075e54
+WhatsApp Dark Green - #128C7E
+WhatsApp Green - #25D366
+WhatsApp Light Green - #DCF8C6
+WhatsApp Blue - #34B7F1
+WhatsApp Grey - #ECE5DD
+Link Blue (if needed) - #2F75B6
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    color: #1e1e1e;
+}
+
+div {
+    height: auto;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+}
+button {
+    background-color: #2F75B6;
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+}
+button:hover {
+    background-color: #20507c;
+}
+
+header {
+    display: flex;
+    padding: 12px;
+    margin: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.07);
+}
+
+.page-heading {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: bold;
+}
+.two-col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.two-col > div {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+}
+.stage {
+    justify-content: center;
+    background-color: #eeeeee;
+}
+.two-col .control {
+    flex-direction: column;
+    /* padding-right: 6vw; */
+}
+#wa-msg {
+    width: 280px;
+    height: 560px;
+    font-family: 'roboto', sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.time-header {
+    padding: 4px 8px;
+    font-size: 8px;
+    /* width: 100%; */
+    background-color: #075e54;
+    color: white;
+    text-align: right;
+}
+.head {
+    padding: 6px 8px;
+    background-color: #128C7E;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.back-arrow-container {
+    margin-right: 8px;
+}
+.logo-name-container {
+    display: flex;
+    align-items: center;
+}
+#logo {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    margin: 0px;
+    margin-right: 8px;
+}
+.name-container {
+    margin-right: 8px;
+}
+.green-tick {
+    width: 16px;
+    height: auto;
+}
+.msg-container {
+    height: 100%;
+    background-color: #ece5dd;
+    background-image: url("./wabg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12px 8px;
+    padding-right: 20px;
+}
+.msg {
+    background-color: white;
+    color: #1e1e1e;
+    border-radius: 4px;
+    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); */
+    padding: 8px;
+    margin-bottom: 4px;
+}
+#msg-img-input {
+    display: none;
+}
+.msg-img-container {
+    position: relative;
+    margin-bottom: 8px;
+    display: none;
+}
+#msgimg {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+.vid-ico {
+    position: absolute;
+    margin:auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.divider {
+    width: auto;
+    height: 1px;
+    background-color: #eee;
+    margin: 8px 0px;
+    margin-bottom: 12px;
+}
+.link {
+    text-align: center;
+    line-height: 1;
+    color: #2F75B6;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link:last-child {
+    margin-top: 12px;
+}
+.link img {
+    margin-right: 4px;
+}
+.quickreply {
+    text-align: center;
+    line-height: 1;
+    padding : 8px 12px;
+    color: #2F75B6;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.input-container {
+    margin: 12px 0px;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+input, textarea, select {
+    display: block;
+    width: 100%;
+    font-family: 'roboto', sans-serif;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #c4c4c4;
+}
+textarea {
+    min-height: 160px;
+    resize: none;
+}

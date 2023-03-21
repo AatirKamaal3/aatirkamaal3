@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./htmltocanvas.js"></script>
+    <script src="./app.js" defer="defer"></script>
+</head>
+<body>
+    <header>
+        <div class="page-heading">WhatsApp Message Builder</div>
+    </header>
+    <div class="two-col">
+        <div class="control">
+            <div>
+                <p>Use input box and switches to update the final view and click download.</p>
+            </div>
+            <div class="input-container">
+                <label for = "logo">Logo</label>
+                <input name = "logo" type="file" />
+            </div>
+            <div class="input-container">
+                <label for="cname">Company Name</label>
+                <input name="cname" type="text" placeholder="Type here" value="QuickReply.ai"/>
+            </div>
+            <div class="input-container">
+                <label for="media">Media</label>
+                <select name="media">
+                    <option value="nomedia">No Media</option>
+                    <option value="image">Image</option>
+                    <option value="video">Video</option>
+                    <!-- <option value="pdf">PDF</option> -->
+                </select>
+            </div>
+            <div id="msg-img-input" class="input-container">
+                <label for = "msgimg">Media Image</label>
+                <input name = "msgimg" type="file" />
+            </div>
+            <div class="input-container">
+                <label for="msg">Message</label>
+                <textarea name="msg">Type in the message here</textarea>
+            </div>
+            <div class="input-container">
+                <label for="clink">Call Link</label>
+                <input name="clink" type="text" placeholder="Type here"/>
+            </div>
+            <div class="input-container">
+                <label for="elink">External Link</label>
+                <input name="elink" type="text" placeholder="Type here"/>
+            </div>
+            <div class="input-container">
+                <label for="qr1">Quick Reply Button 1</label>
+                <input name="qr1" type="text" placeholder="Type here"/>
+            </div>
+            <div class="input-container">
+                <label for="qr2">Quick Reply Button 2</label>
+                <input name="qr2" type="text" placeholder="Type here"/>
+            </div>
+            <div class="input-container">
+                <label for="qr3">Quick Reply Button 3</label>
+                <input name="qr3" type="text" placeholder="Type here"/>
+            </div>
+            <div class="input-container">
+                <button onclick="print()">Download</button>    
+            </div>
+        </div>
+        <div class="stage">
+            <div id="wa-msg">
+                <div class="time-header">00:00</div>
+                <div class="head">
+                    <div class="back-arrow-container">
+                        <img src="./arrow back.svg" />
+                    </div>
+                    <div class="logo-name-container">
+                        <div class="logo-container">
+                            <img id="logo" src="./qrl.png" />
+                        </div>
+                        <div id="cname" class="name-container">QuickReply.ai</div>
+                        <img class="green-tick" src="./green tick.png" />
+                    </div>
+                </div>
+                <div class="msg-container">
+                    <div class="msg">
+                        <div class="msg-img-container">
+                            <img id="msgimg" src="./img pl.jpg" />
+                            <img class="vid-ico" src="./vid ico.svg" />
+                        </div>
+                        <div id="msg" class="msg-txt">Type in the message here.</div>
+                        <div id="linkdivider" class="divider"></div>
+                        <div class="call-link-container link">
+                            <img src="./call.svg" />
+                            <div id="clink">Call Now</div>
+                        </div>
+                        <div class="external-link-container link">
+                            <img src="./extlink.svg" />
+                            <div id="elink">External Link</div>
+                        </div>
+                    </div>
+                    <div class="quickreply" id="qr1">Quick Reply 1</div>
+                    <div class="quickreply" id="qr2">Quick Reply 2</div>
+                    <div class="quickreply" id="qr3">Quick Reply 3</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
